@@ -10,7 +10,7 @@ const objectId = require("mongoose").Types.ObjectId;
 app.use(cors());
 
 // login
-emprouter.post("/api/login", (req, res) => {
+emprouter.post("/api/employees/login", (req, res) => {
   let userData = req.body;
   Employee.findOne(
     {
